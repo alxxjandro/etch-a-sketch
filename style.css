@@ -1,0 +1,14 @@
+*{
+    box-sizing: border-box;
+}
+
+#gridContainer{
+    display: flex;
+}
+
+.gridCube{
+    height: 30px;
+    width: 30px;
+    border: 3px solid black;
+    margin: 3px;
+}
