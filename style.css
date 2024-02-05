@@ -24,7 +24,7 @@ body{
 }
 
 .gridContainer {
-    border: solid 1px red;
+    border: solid 1px rgb(0, 0, 0);
     margin: 10px;
     width: 95%;
     flex: 1;
@@ -39,7 +39,7 @@ body{
 
 .row {
     flex: 1;
-    border: solid 1px blue;
+    border: solid 1px rgb(0, 0, 0);
 }
 
 .row:hover{
