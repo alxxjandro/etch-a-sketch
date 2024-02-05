@@ -24,7 +24,7 @@ body{
 }
 
 .gridContainer {
-    border: solid 1px rgb(0, 0, 0);
+    border: solid 1px rgb(176, 176, 176);
     margin: 10px;
     width: 95%;
     flex: 1;
@@ -39,7 +39,7 @@ body{
 
 .row {
     flex: 1;
-    border: solid 1px rgb(0, 0, 0);
+    border: solid 1px rgb(176, 176, 176);
 }
 
 .row:hover{
@@ -60,7 +60,7 @@ body{
     font-weight: bold;
     border-radius: 5px;
     cursor: pointer;
-    background-color: rgb(217, 217, 217);
+    background-color: rgb(211, 211, 211);
     transition: background-color 0.3s ease;
 }
 
@@ -72,3 +72,22 @@ body{
     background-color: rgb(161, 161, 161);
 }
 
+.footer{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: rgb(255, 57, 57);;
+}
+
+.footer p{
+    color: rgb(252, 86, 86);
+}
+
+.header{
+    color: rgb(255, 57, 57);
+}
+
+.transition .row {
+    transition: background-color 0.2s ease;
+}

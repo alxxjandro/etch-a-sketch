@@ -1,5 +1,6 @@
 const bodyContainer = document.querySelector('.gridContainer'); 
 let color = 'black'
+let bgColor = 'rgb(240, 240, 240)'
 
 //defining the buttons
 const blackInkBtn = document.querySelector('#blackInk');
@@ -22,6 +23,9 @@ function createGrid(numberOfSlots) {
             let row = document.createElement('div');
             row.classList.add('row');
             column.append(row);
+
+            //animate the drawing
+            bodyContainer.classList.add('transition');
 
             //pass over which row is the mouse hovering into
             row.addEventListener('mouseover', () =>{
@@ -63,9 +67,11 @@ resizeBtn.addEventListener('click',() => {
 resetBtn.addEventListener('click', () =>{
     const gridCubes = document.querySelectorAll('.row');
     gridCubes.forEach(function(cube,index){
-        cube.style.backgroundColor = 'white'
+        cube.style.backgroundColor = bgColor;
     })
 })
+
+
 
 createGrid(16);
 
